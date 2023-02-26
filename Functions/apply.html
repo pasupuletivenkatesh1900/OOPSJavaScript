@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply function</title>
+</head>
+<body>
+    <h1>Apply Function</h1>
+    
+</body>
+
+<script>
+
+    function displayFunction(testScore,testScore2){
+        document.write(this.id+"<br/>")
+        document.write(this.name+"<br/>")
+        document.write(testScore+"<br/>")
+        document.write(testScore2+"<br/>")
+    }
+    var Student1={
+         id:10,
+         name:"Venkatesh",
+         display:displayFunction
+    }
+
+    var Student2={
+        id:19,
+        name : "VenkyMonkey",
+        display:displayFunction
+    }
+
+    this.id =3
+    this.name="Nikhil"
+    displayFunction.apply(Student1,[10,20])
+    displayFunction.apply(Student2,[20])
+    displayFunction.apply(this,[30])
+    
+    Student2.display()
+    displayFunction();
+</script>
+</html>
