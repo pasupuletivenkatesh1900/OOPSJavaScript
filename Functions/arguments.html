@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arguments</title>
+</head>
+<body>
+    <h1>Arguments</h1>
+</body>
+     <script>
+        function product(){
+            let result=1
+            for(var i=0;i<arguments.length;i++){
+                 result*=arguments[i]
+            }
+            return result;
+        }
+        document.write(product(3,4,5)+"<br/>")
+        document.write(product(2,5)+"<br/>")
+        document.write(product(5)+"<br/>")
+        document.write(product()+"<br/>")
+     </script>
+</html>

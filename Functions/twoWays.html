@@ -14,6 +14,9 @@
    <script>
 
     function evenOrOdd(number){  //first Way "Defining a Function"
+        document.write(arguments[0]+"<br/>") //accessing the arguments from line:37
+        document.write(arguments.length+"<br/>") //length of arguments from line:37
+        document.write(evenOrOdd.length+"<br/>") //lenght of arguments of function evenOrOdd line: 16
         if(number%2==0){
             return "Even Number"
         }else{
@@ -29,7 +32,9 @@
         }
     } 
 
-    document.write(evenOrOdd(5)+"<br/>")
+    var e=evenOrOdd;
+
+    document.write(e(10,8,1,90,76)+"<br/>")
     document.write(evenOrOdd2(5)+"<br/>")
   
    </script>
