@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Functions OverLoading Issue</h1>
+    <p> Because JavaScript only considers the last defined function</p>
+</body>
+
+
+<script>
+    function add(num1,num2,num3){
+        return num1+num2+num3;
+    }
+
+    function add(num1, num2){
+        return num1+num2;
+    }
+
+    document.write(add(3,6,5)) 
+</script>
+</html>
