@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <h1>Primtive Types store the values Directy in to them</h1>
+    <h2>
+        <li>string</li>
+        <li>number</li>
+        <li>bigint</li>
+        <li>boolean</li>
+        <li>undefined</li>
+        <li>symbol</li>
+        <li>null</li>
+    </h2>
+
 </body>
+
 </html>
 <script>
-var customerName = "John";
-var accountNumber= 2000;
-var isVaild = true;
+    var customerName = "John";
+    var accountNumber = 2000;
+    var isVaild = true;
 
-var object = null;
+    var object = null;
 
-var x= undefined;
-var y;
+    
+    var x= 123;
+    var y;
 
-document.write(customerName+"<br/>")
-document.write(accountNumber+"<br/>")
-document.write(isVaild+"<br/>")
-document.write(object+"<br/>")
-document.write(x+"<br/>")
-document.write(y+"<br/>")
+    var quote = "Your the CREATOR of your destiny"
+
+
+    document.write(customerName + "-" + typeof customerName + "<br/>")
+    document.write(accountNumber + "-" + typeof accountNumber + "<br/>")
+    document.write(isVaild + "-" + typeof isVaild + "<br/>")
+    document.write(object + "-" + typeof object + "<br/>")
+    document.write(x + "-" + typeof x + "<br/>")
+    document.write(y + "-" + typeof y + "<br/>")
+
+    document.write(quote.toLowerCase()+"<br/>")
+    document.write(quote.substring(5,10)+"<br/>")
+    document.write(quote.charAt(8)+"<br/>")
+    document.write(typeof x.toString() +"<br/>")
+    document.write(typeof isVaild.toString()+"<br/>")
+    
+
 </script>
