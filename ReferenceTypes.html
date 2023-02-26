@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Reference Types is where the object orientation begins.Reference types in JavaScript is same a class in JAVA, C++ and PYTHON.Once we have a reference types we can create any number of instances or object</h1>
+    <p>
+        <li>Array</li>
+        <li>Date</li>
+        <li>Error</li>
+        <li>Function</li>
+        <li>Object</li>
+        <li>RegExp</li>
+
+    </p>
+</body>
+
+</html>
+<script>
+   var obj1 =new Object()
+   obj2= obj1
+   obj1.myProperty = "All the power is within in you."
+
+   document.write(obj2.myProperty)
+
+   //cleaning Up the Memory
+   obj1= null
+   obj2= null
+</script>

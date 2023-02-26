@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwoWay Function Declartion</title>
+</head>
+<body>
+    <h1>Two Ways of Declaring a Function</h1>
+    <p>In JavaScript all the functions are Reference Types or Objects</p>
+    <p> Hoisting works for Defining a Function it will not work for Expressing a function</p>
+</body>
+   <script>
+
+    function evenOrOdd(number){  //first Way "Defining a Function"
+        document.write(arguments[0]+"<br/>") //accessing the arguments from line:37
+        document.write(arguments.length+"<br/>") //length of arguments from line:37
+        document.write(evenOrOdd.length+"<br/>") //lenght of arguments of function evenOrOdd line: 16
+        if(number%2==0){
+            return "Even Number"
+        }else{
+            return "Odd Number"
+        }
+    }
+
+    var evenOrOdd2 = function(number){  //Second Way "Expressing a Function"
+        if(number%2==0){
+            return "Even Number"
+        }else{
+            return "Odd Number"
+        }
+    } 
+
+    var e=evenOrOdd;
+
+    document.write(e(10,8,1,90,76)+"<br/>")
+    document.write(evenOrOdd2(5)+"<br/>")
+  
+   </script>
+</html>
