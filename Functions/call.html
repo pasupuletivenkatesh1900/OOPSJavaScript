@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call function</title>
+</head>
+<body>
+    <h1>Call Function</h1>
+    
+</body>
+
+<script>
+
+    function displayFunction(){
+        document.write(this.id+"<br/>")
+        document.write(this.name+"<br/>")
+    }
+    var Student1={
+         id:10,
+         name:"Venkatesh",
+         display:displayFunction
+    }
+
+    var Student2={
+        id:19,
+        name : "VenkyMonkey",
+        display:displayFunction
+    }
+
+    this.id =3
+    this.name="Nikhil"
+    displayFunction.call(Student1)
+    displayFunction.call(Student2)
+    displayFunction.call()
+    
+    Student2.display()
+    displayFunction();
+</script>
+</html>
