@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Methods</title>
+</head>
+<body>
+    <h1>Object Methods</h1>
+
+    <h3>This Refer to the Object</h3>
+    <p>All the functions in JavaScript are objects or Reference Types</p>
+</body>
+<script>
+
+    var student ={
+        id:10,
+        name:"Venkatesh",
+        display: function(){
+            document.write(this.id+"<br/>")
+            document.write(this.name+"<br/>")
+        }
+    }
+    student.display();
+</script>
+</html>
