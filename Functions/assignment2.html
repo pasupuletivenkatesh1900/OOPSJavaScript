@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+</head>
+<body>
+    <p>Multiply two numbers by Delaration Way and Expression way and Also demonstriate Function Hoisting</p>
+</body>
+<script>
+    
+    multiply(9,8)
+    function multiply(num1,num2){
+         document.write(num1*num2+"<br/>") ;
+    }
+
+    function multiplyIteration(){
+        let result=1;
+        for(var i=0;i<arguments.length;i++){
+            result*=arguments[i]
+        }
+        return result;
+    }
+
+    var multiply2 ={
+        multiplyNum: function(num1,num2){
+            document.write(num1*num2+"<br/>"); 
+        }
+    }
+   
+    multiply2.multiplyNum(10,8)  
+    document.write(multiplyIteration(10,8,7))
+
+
+</script>
+</html>
