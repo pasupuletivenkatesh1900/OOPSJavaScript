@@ -33,7 +33,11 @@
 
     console.log(course1.hasOwnProperty("name")) // use hasOwnProperty to check whether it has the property defined
 
+  for(var eachProperty in course1){
+    console.log(eachProperty) //gives all the properties avaliable
 
+    console.log(course1[eachProperty]) //provides all the properties values avalible
+  }
     
 </script>
 </html>
