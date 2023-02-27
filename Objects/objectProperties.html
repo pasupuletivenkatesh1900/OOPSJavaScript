@@ -15,12 +15,20 @@
         name: "JavaScript fundamentals" //[Put]
     };
 
-    var Course2 = new Object();
+    var course2 = new Object();
     course2.name="React JS"; //[Put]
    
     course1.name ="End to End Java Project"; //[Set]
 
     course1.description = "Master Java Project Development";  //[Put]
+
+    console.log("name" in course1) //pointing to line 14
+
+    console.log("description" in course1) //pointing to line 23
+
+    console.log("toString" in course1); // checks if it has the method
+
+    console.log(course1.hasOwnProperty("toString")) // use hasOwnProperty to check whether it has the property defined
 
 
     
