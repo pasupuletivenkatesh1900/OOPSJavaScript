@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            var creditCard ={
+                _name: "John",
+
+                get name(){      //if we define only getter then its called read only
+                   return this._name;
+                },
+
+                set name(value){  //if we define only setter then its called write only
+                    this._name= value;
+                }
+            }
+
+            console.log(creditCard._name);
+            creditCard.name="Bob";
+            console.log(creditCard.name);
+        </script>
+    </head>
+</html>
